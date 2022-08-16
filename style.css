@@ -67,3 +67,10 @@ footer{
     justify-content: space-between;
     padding: 0 35%;
 }
+a:link{
+    color: #BB99DD;
+}
+
+a:visited{
+    color: #BB99DD;
+}
