@@ -1,0 +1,69 @@
+body{
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #E5E5E5;
+    color: #BB99DD;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "aside aside aside"
+        "main main main"
+        "footer footer footer"
+    ;
+    grid-template-rows: 200px 50px 1fr 100px;
+}
+
+div{
+    border: solid #BB99DD;
+    text-align: center;
+    padding: 8px 150px;
+}
+
+header{
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+      
+}
+
+#perfil {/*bordas da foto de perfil arredondadas*/
+    border-radius: 120px 120px 120px 120px;
+    border: solid #BB99DD;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+aside{
+    grid-area: aside;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    grid-area: main;
+    display: grid;
+    grid-template-areas: 
+        "div"
+        "div"
+        "div"
+        "div"
+    ;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    grid-area: footer;
+    display: grid;
+    grid-template-areas:
+        "img img img img img"
+    ;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 35%;
+}
